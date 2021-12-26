@@ -1,6 +1,7 @@
 .hero {
   background-image: url('../images/hero.svg');
-  min-height: 100vh;
+  max-height: 100vh;
+  min-height: 775px;
   background-repeat: no-repeat;
   padding-left: 76px;
   padding-right: 48px;
@@ -31,21 +32,23 @@
     }
   }
   .hero-comment {
-      h2,img{
-          margin-left: 19px;
-      }
+    h2,
+    img {
+      margin-left: 19px;
+    }
     p {
       width: 244px;
       font-size: 13px;
     }
-    img,p{
+    img,
+    p {
       margin-top: 37px;
     }
     .register {
       width: 148px;
       height: 33px;
-        margin-top: 37px;
-        margin-left: 87px;
+      margin-top: 37px;
+      margin-left: 87px;
       background: linear-gradient(89.89deg, #e426fd -1.26%, #7302ea 96.22%);
       border-radius: 14px;
     }

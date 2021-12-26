@@ -1,7 +1,10 @@
 @use 'hero';
 @use 'searchbox';
+@use 'sections';
+@use 'sort';
 *{
     background-repeat: no-repeat;
+    box-sizing: border-box !important;
 }
 .divider{
     width: 1px;

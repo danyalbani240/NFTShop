@@ -1,8 +1,13 @@
 <template>
- <TheHero />
+  <div>
+    <TheHero />
+    <TheSections />
+    <TheSort />
+  </div>
 </template>
 
 <script>
 export default {
+ 
 }
 </script>
