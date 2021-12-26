@@ -2,4 +2,30 @@
     background-image: url('../images/hero.svg');
     min-height: 100vh;
     background-repeat: no-repeat;
+    padding-left: 76px;
+    padding-right: 48px;
+    .logo{
+        background-image: url('../images/NFTLogo.svg');
+        width: 69.29px;
+        height: 81px;
+        margin-top: 23px;
+    }
+    .links{
+        margin-left: 260.71px;
+        margin-top: 43px;
+        width: 484px;
+    }
+    .buttons{
+        margin-left: 213px;
+        width: 129px;
+        height: 27px;
+        margin-top: 42px;
+        .cart{
+            background-image: url('../images/cart.svg');
+            width: 27px;
+        }
+        .profile{
+            background-image: url('../images/person.svg');
+        }
+    }
 }
