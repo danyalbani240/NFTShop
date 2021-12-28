@@ -6,6 +6,7 @@
     <TheItems />
     <ThePopular />
     <TheBenefits />
+    <Q />
   </div>
 </template>
 

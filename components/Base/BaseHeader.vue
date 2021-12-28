@@ -1,9 +1,11 @@
 <template>
-  <div class="flex">
+  <div class="flex ">
       <p>
           <slot> </slot>
       </p>
-      <div class="flex-1 lev"></div>
+      <div class="flex-1 justify-end  flex flex-col">
+          <div class="lev"></div>
+      </div>
   </div>
 </template>
 
@@ -22,5 +24,6 @@ p{
 .lev{
     height: 1px;
     background-color: rgba(0, 0, 0, 0.16);
+    width: 100%;
 }
 </style>
