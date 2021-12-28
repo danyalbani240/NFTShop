@@ -2,6 +2,8 @@
 @use 'searchbox';
 @use 'sections';
 @use 'sort';
+@use 'items';
+@use 'card';
 *{
     background-repeat: no-repeat;
     box-sizing: border-box !important;
@@ -10,4 +12,7 @@
     width: 1px;
     border-radius: 100%;
     background-color: rgba(217, 217, 217,0.63);
+}
+.container{
+    width: 1112px;
 }

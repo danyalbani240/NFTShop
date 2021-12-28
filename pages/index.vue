@@ -3,6 +3,7 @@
     <TheHero />
     <TheSections />
     <TheSort />
+    <TheItems />
   </div>
 </template>
 
