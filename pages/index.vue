@@ -5,6 +5,7 @@
     <TheSort />
     <TheItems />
     <ThePopular />
+    <TheBenefits />
   </div>
 </template>
 
