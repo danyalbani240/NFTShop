@@ -4,6 +4,7 @@
     <TheSections />
     <TheSort />
     <TheItems />
+    <ThePopular />
   </div>
 </template>
 
