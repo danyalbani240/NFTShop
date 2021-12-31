@@ -7,6 +7,7 @@
     <ThePopular />
     <TheBenefits />
     <Q />
+    <TheFooter />
   </div>
 </template>
 
