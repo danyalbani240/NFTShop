@@ -14,6 +14,8 @@ export default {}
   border: 1px solid #c91efa;
   box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  width: 128px;
+  height: 117px;
   p {
     color: #c91efa52;
   }
