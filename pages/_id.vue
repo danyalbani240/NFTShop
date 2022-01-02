@@ -8,6 +8,11 @@
         </div>
         <TheDetail />
         <TheRelated />
+        <div class="flex justify-between" style="padding:67px 30px;">
+          <img src="../assets/images/52.svg" alt=""><img src="../assets/images/52.svg" alt="">
+        </div>
+        <TheRelated style="margin-bottom:198px;" />
+        <TheFooter />
   </div>
 </template>
 
