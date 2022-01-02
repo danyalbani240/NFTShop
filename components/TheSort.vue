@@ -1,5 +1,5 @@
 <template>
-  <div class="sort-container flex items-center justify-between">
+  <div class="sort-container flex items-center justify-between mx-auto">
       <div class="flex text-white cursor-pointer">
           <img class="mr-4" src="../assets/images/sortburger.svg" alt="">
           <span>BestSelling</span>

@@ -1,6 +1,6 @@
 <template>
-  <div class="hero">
-    <nav class="flex">
+  <div class="hero justify-between">
+    <nav class="flex justify-between">
       <div class="logo"></div>
       <div class="links flex justify-between text-white">
         <p class="cursor-pointer">Home</p>

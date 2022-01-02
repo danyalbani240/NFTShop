@@ -1,5 +1,5 @@
 <template>
-  <div class="items container flex flex-wrap justify-between">
+  <div class="items container flex flex-wrap justify-between mx-auto">
       <BaseCard />
       <BaseCard />
       <BaseCard />

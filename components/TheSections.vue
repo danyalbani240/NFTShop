@@ -1,5 +1,5 @@
 <template>
-  <div class="sections flex justify-between items-center mt-4">
+  <div class="sections flex justify-between mx-auto items-center mt-4">
       <div class="flex flex-col items-center">
           <img src="../assets/images/film.svg" alt="">
           <p class="mt-2.5">Film</p>
