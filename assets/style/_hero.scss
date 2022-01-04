@@ -12,17 +12,36 @@
       width: 69.29px;
       height: 81px;
       margin-top: 23px;
+      animation: Slide_Left 1.5s ease-in-out forwards;
     }
     .links {
       margin-left: 260.71px;
       margin-top: 43px;
       width: 484px;
+      p{
+        animation: Slide_Up forwards;
+      }
+      p:first-child{
+        animation-duration: 1s;
+      }
+      p:nth-child(2){
+        animation-duration: 1.5s;
+      }
+      p:nth-child(3){
+        animation-duration: 2s;
+
+      }
+      p:nth-child(4){
+        animation-duration: 2.2s;
+
+      }
     }
     .buttons {
       margin-left: 213px;
       width: 129px;
       height: 27px;
       margin-top: 42px;
+      animation: Slide_Left 2s forwards;
       .cart {
         background-image: url('../images/cart.svg');
         width: 27px;
@@ -33,6 +52,7 @@
     }
   }
   .hero-comment {
+    animation: Slide_Left 1s forwards;
     h2,
     img {
       margin-left: 19px;
