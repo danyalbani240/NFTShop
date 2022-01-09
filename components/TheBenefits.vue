@@ -1,5 +1,5 @@
 <template>
-  <div class="flex benefits justify-between mx-auto">
+  <div class="flex benefits justify-around mx-auto flex-wrap">
       <div class="flex flex-col items-center ">
           <img src="../assets/images/bro.svg" alt="">
           <div class="text-center">
