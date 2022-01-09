@@ -22,7 +22,9 @@
         Register
       </div>
     </div>
-    <the-search-box />
+    <div class="flex flex-row-reverse">
+      <the-search-box />
+    </div>
   </div>
 </template>
 
