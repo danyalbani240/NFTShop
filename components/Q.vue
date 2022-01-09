@@ -3,7 +3,7 @@
     <div style="margin-left: 31px">
       <BaseHeader> Your Questions </BaseHeader>
     </div>
-    <div style="margin-top: 60px; margin-left: 50px" class="flex">
+    <div style="margin-top: 60px;" class="flex justify-evenly">
       <div class="flex items-center">
         <div class="flex flex-col justify-between">
           <img src="../assets/images/arrup.svg" alt="" /><img
