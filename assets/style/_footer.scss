@@ -13,3 +13,15 @@
         margin-right: 188.17px;
     }
 }
+@media (max-width:360px) {
+    .footer{
+        height: auto;
+        .footer-secs{
+            min-width: 280px;
+        }
+        >:last-child{
+            margin-right: 0;
+        }
+    }
+    
+}
