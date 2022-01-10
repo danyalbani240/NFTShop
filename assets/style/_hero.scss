@@ -6,7 +6,13 @@
   padding-left: 76px;
   padding-right: 48px;
   background-size: cover;
+  
   nav {
+    .burger{
+      background-image: url('../images/burger.svg');
+      width: 50px;
+      height: 50px;
+    }
     .logo {
       background-image: url('../images/NFTLogo.svg');
       width: 69.29px;
@@ -73,5 +79,18 @@
       background: linear-gradient(89.89deg, #e426fd -1.26%, #7302ea 96.22%);
       border-radius: 14px;
     }
+  }
+}
+@media (max-width:1280px){
+  .hero {
+    background-size: contain;
+    padding-left: 25px;
+  }
+}
+@media (max-width:1024px){
+  .hero {
+    background-size: contain;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
