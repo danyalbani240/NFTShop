@@ -1,29 +1,46 @@
-.Q{
-    background-color: #f3f3f3;box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
-    padding-top: 21px;
-    padding-bottom: 65.66px;
-    .Q-image{
-        
-    }
-    >div:nth-child(2){
-        >div{
-            >div:first-child{
-                height: 75.35px;
-                margin-right: 65px;
-            }
-            >div:nth-child(2){
-                height: 180px;
-                div:nth-child(2){
-                    p{
-                        width: 583px;
-                        line-height: 16.85px;
-                        font-size: 14px;
-                        text-align: justify;
-                    }
-                }
-            }
-            
+.Q {
+  background-color: #f3f3f3;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  padding-top: 21px;
+  padding-bottom: 65.66px;
+
+  > div:nth-child(2) {
+    > div {
+      > div:first-child {
+        height: 75.35px;
+        margin-right: 65px;
+      }
+      > div:nth-child(2) {
+        height: 180px;
+        div:nth-child(2) {
+          p {
+            width: 583px;
+            line-height: 16.85px;
+            font-size: 14px;
+            text-align: justify;
+          }
         }
+      }
     }
-    
+  }
+}
+@media (max-width: 640px) {
+  .Q {
+    padding: 0;
+    > div:nth-child(2) {
+      > div {
+        > div:first-child {
+          height: 75.35px;
+          margin-right: 65px;
+        }
+        > div:nth-child(2) {
+          height: auto;
+          padding-bottom: 70px;
+        }
+      }
+    }
+  }
+  .q-describe {
+    max-width: 200px;
+  }
 }
