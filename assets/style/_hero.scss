@@ -5,24 +5,23 @@
   background-repeat: no-repeat;
   padding-left: 76px;
   padding-right: 48px;
-  background-size: cover;
+
   
   nav {
     .burger{
-      background-image: url('../images/burger.svg');
-      width: 50px;
-      height: 50px;
+      // margin-top: 23px;
     }
     .logo {
       background-image: url('../images/NFTLogo.svg');
-      width: 69.29px;
-      height: 81px;
-      margin-top: 23px;
+      // width: 69.29px;
+      // height: 81px;
+      
+      // margin-top: 23px;
       animation: Slide_Left 1.5s ease-in-out forwards;
     }
     .links {
       // margin-left: 260.71px;
-      margin-top: 43px;
+      // margin-top: 43px;
       width: 484px;
       p{
         animation: Slide_Up forwards;
@@ -61,7 +60,7 @@
     animation: Slide_Left 1s forwards;
     h2,
     img {
-      margin-left: 19px;
+      // margin-left: 19px;
     }
     p {
       width: 244px;
@@ -69,13 +68,16 @@
     }
     img,
     p {
-      margin-top: 37px;
+      // margin-top: 37px;
     }
     .register {
-      width: 148px;
-      height: 33px;
-      margin-top: 37px;
-      margin-left: 87px;
+      // width: 148px;
+      // height: 33px;
+      width: 77px;
+      height: 23px;
+      font-size: 12px;
+      // margin-top: 37px;
+      // margin-left: 87px;
       background: linear-gradient(89.89deg, #e426fd -1.26%, #7302ea 96.22%);
       border-radius: 14px;
     }
@@ -83,14 +85,38 @@
 }
 @media (max-width:1280px){
   .hero {
-    background-size: contain;
+    // background-size: contain;
     padding-left: 25px;
   }
 }
 @media (max-width:1024px){
   .hero {
-    background-size: contain;
-    padding-left: 25px;
-    padding-right: 25px;
+    // background-size: contain;
+    padding: 0;
+    min-height: auto;
   }
+  .logo{
+    margin-left: 1rem;
+    
+  }
+  // .hero-comment{
+  //   // >img{
+  //   //   width: 230px;
+  //   // }
+  // }
+}
+@media (max-width: 360px){
+  .hero{
+    background-image: url(../images/hero-mobile.svg);
+    background-size: cover;
+    min-height: 252px;
+    // .register{
+    //   margin-left: 0;
+    // }
+  }
+  
+}
+.nft-head{
+  width: 138px;
+  height: 73px;
 }
