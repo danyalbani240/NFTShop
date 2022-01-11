@@ -1,0 +1,11 @@
+.mobile-nav{
+    background-image: url(../images/mob-nav-bg.svg);
+    background-color:  #1C1254;
+    .link-item{
+        font-weight: 500; 
+    }
+    .link-item.active{
+        color: #D622FB;
+
+    }
+}

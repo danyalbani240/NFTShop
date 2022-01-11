@@ -1,122 +1,153 @@
 .hero {
   background-image: url('../images/hero.svg');
-  max-height: 100vh;
-  min-height: 775px;
-  background-repeat: no-repeat;
-  padding-left: 76px;
-  padding-right: 48px;
+  .logo {
+    background-image: url('../images/NFTLogo.svg');
+  }
+}
+@media (max-width: 360px) {
+  .hero {
+    background-image: url(../images/hero-mobile.svg);
+  }
+}
 
-  
-  nav {
-    .burger{
-      // margin-top: 23px;
-    }
-    .logo {
-      background-image: url('../images/NFTLogo.svg');
-      // width: 69.29px;
-      // height: 81px;
-      
-      // margin-top: 23px;
-      animation: Slide_Left 1.5s ease-in-out forwards;
-    }
-    .links {
-      // margin-left: 260.71px;
-      // margin-top: 43px;
-      width: 484px;
-      p{
-        animation: Slide_Up forwards;
-      }
-      p:first-child{
-        animation-duration: 1s;
-      }
-      p:nth-child(2){
-        animation-duration: 1.5s;
-      }
-      p:nth-child(3){
-        animation-duration: 2s;
-
-      }
-      p:nth-child(4){
-        animation-duration: 2.2s;
-
-      }
-    }
-    .buttons {
-      // margin-left: 213px;
-      width: 129px;
-      height: 27px;
-      margin-top: 42px;
-      animation: Slide_Left 2s forwards;
-      .cart {
-        background-image: url('../images/cart.svg');
-        width: 27px;
-      }
-      .profile {
-        background-image: url('../images/person.svg');
-      }
-    }
+@media (max-width: 640px) {
+  .hero {
+    min-height: 252px;
+    padding: 0;
   }
   .hero-comment {
-    animation: Slide_Left 1s forwards;
     h2,
     img {
-      // margin-left: 19px;
-    }
-    p {
-      width: 244px;
-      font-size: 13px;
+      margin-left: 0px;
     }
     img,
     p {
-      // margin-top: 37px;
+      margin-top: 0px;
     }
     .register {
-      // width: 148px;
-      // height: 33px;
       width: 77px;
       height: 23px;
-      font-size: 12px;
-      // margin-top: 37px;
-      // margin-left: 87px;
-      background: linear-gradient(89.89deg, #e426fd -1.26%, #7302ea 96.22%);
-      border-radius: 14px;
+      margin-top: 0px;
+      margin-left: 0px;
     }
   }
-}
-@media (max-width:1280px){
-  .hero {
-    // background-size: contain;
-    padding-left: 25px;
+  .nft-head {
+    width: 138px;
   }
 }
-@media (max-width:1024px){
+
+@media (min-width: 640px) {
   .hero {
-    // background-size: contain;
+    min-height: 400px;
     padding: 0;
-    min-height: auto;
+    .logo {
+      width: 40px;
+      background-size: contain;
+      height: 40px;
+    }
+    .hero-comment {
+      p {
+        width: 200px;
+      }
+    }
   }
-  .logo{
-    margin-left: 1rem;
-    
+  .nft-head {
+    width: 138px;
   }
-  // .hero-comment{
-  //   // >img{
-  //   //   width: 230px;
-  //   // }
-  // }
 }
-@media (max-width: 360px){
-  .hero{
-    background-image: url(../images/hero-mobile.svg);
-    background-size: cover;
-    min-height: 252px;
-    // .register{
-    //   margin-left: 0;
-    // }
+@media (min-width: 768px) {
+  .hero {
+    padding: 0 20px;
+    min-height: 500px;
   }
-  
+  .nft-head {
+    width: 170px;
+  }
 }
-.nft-head{
-  width: 138px;
-  height: 73px;
+
+@media (min-width: 1024px) {
+  .hero {
+    background-image: url('../images/hero.svg');
+    max-height: 100vh;
+    min-height: 775px;
+    background-repeat: no-repeat;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    nav {
+      .logo {
+        background-image: url('../images/NFTLogo.svg');
+        width: 69.29px;
+        height: 81px;
+
+        animation: Slide_Left 1.5s ease-in-out forwards;
+      }
+      .links {
+        width: 484px;
+        p {
+          animation: Slide_Up forwards;
+        }
+        p:first-child {
+          animation-duration: 1s;
+        }
+        p:nth-child(2) {
+          animation-duration: 1.5s;
+        }
+        p:nth-child(3) {
+          animation-duration: 2s;
+        }
+        p:nth-child(4) {
+          animation-duration: 2.2s;
+        }
+      }
+      .buttons {
+        width: 129px;
+        height: 27px;
+        margin-top: 42px;
+        animation: Slide_Left 2s forwards;
+        .cart {
+          background-image: url('../images/cart.svg');
+          width: 27px;
+        }
+        .profile {
+          background-image: url('../images/person.svg');
+        }
+      }
+    }
+    .hero-comment {
+      animation: Slide_Left 1s forwards;
+      h2,
+      img {
+        margin-left: 19px;
+      }
+      p {
+        width: 244px;
+        font-size: 13px;
+      }
+      img,
+      p {
+        margin-top: 37px;
+      }
+      .register {
+        width: 148px;
+        height: 33px;
+
+        font-size: 12px;
+        margin-top: 37px;
+
+        background: linear-gradient(89.89deg, #e426fd -1.26%, #7302ea 96.22%);
+        border-radius: 14px;
+      }
+    }
+  }
+  .nft-head {
+    width: 230px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    padding-left: 76px;
+    padding-right: 48px;
+  }
 }
