@@ -2,7 +2,7 @@
     height: 508px;
     background-image: url('../images/footer-bg.svg'), linear-gradient(280.15deg, #1D1355 -1.19%, #D823FC 136.02%);
     .footer-secs{
-        margin-top: 104.89px;
+        // margin-top: 104.89px;
         p{
             margin-top: 16.5px;
             margin-bottom: 16.5px;
@@ -10,10 +10,10 @@
         }
     }
     >:last-child{
-        margin-right: 188.17px;
+        // margin-right: 188.17px;
     }
 }
-@media (max-width:360px) {
+@media (max-width:640px) {
     .footer{
         height: auto;
         .footer-secs{
