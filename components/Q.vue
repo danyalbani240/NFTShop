@@ -4,26 +4,26 @@
       <BaseHeader> Your Questions </BaseHeader>
     </div>
     <div style="margin-top: 60px;" class="flex justify-evenly">
-      <div class="flex items-center">
-        <div class=" flex-col justify-between hidden sm:flex">
+      <div class="flex items-center px-10 flex-1">
+        <div class=" flex-col justify-between hidden lg:flex">
           <img class="cursor-pointer" src="../assets/images/arrup.svg" alt="" /><img class="cursor-pointer"
             src="../assets/images/arrdown.svg"
             alt=""
           />
         </div>
-        <div class="flex-col justify-between flex">
+        <div class="flex-col flex-1 justify-between flex">
           <div class="flex">
             <img class="mr-10" src="../assets/images/questionmark.svg" alt="" />
             <p class="text-2xl">How do I sell an NFT?</p>
           </div>
-          <div class=" flex">
+          <div class=" flex items-start mt-8 lg:items-center ">
               <img class="mr-10" src="../assets/images/support.svg" alt="" />
-            <p class="text-2xl q-describe">To list an NFT for sale, our team will first of all approve the content to make sure it’s appropriate for listing. This process usually takes 4-8 hours. Upon successful approval, your NFT will list immediately on the Marketplace as either an auction or fixed price sale, according to your preference. Alternatively, you can also choose to list your NFT at a fixed time (with a minimum of 12 hours after approval).</p>
+            <p class="text-2xl w-full q-describe">To list an NFT for sale, our team will first of all approve the content to make sure it’s appropriate for listing. This process usually takes 4-8 hours. Upon successful approval, your NFT will list immediately on the Marketplace as either an auction or fixed price sale, according to your preference. Alternatively, you can also choose to list your NFT at a fixed time (with a minimum of 12 hours after approval).</p>
           </div>
         </div>
       </div>
 
-      <img class="Q-image hidden sm:block" src="../assets/images/Q.svg" alt="" />
+      <img class="Q-image hidden xl:block" src="../assets/images/Q.svg" alt="" />
     </div>
   </div>
 </template>
