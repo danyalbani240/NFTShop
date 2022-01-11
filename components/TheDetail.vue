@@ -1,6 +1,6 @@
 <template>
   <div class="Detail flex flex-col items-center bg-white">
-      <div class="flex">
+      <div class="flex  flex-wrap justify-center">
           <div class="photo flex items-center justify-center">
             <img src="../assets/images/Detail-Image.svg" alt="">
           </div>
