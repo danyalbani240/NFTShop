@@ -17,7 +17,7 @@
           of "Endangered Species Artworks”. 20% of the proceeds from each piece
           is pledged to the Philippine Eagle Foundation.
         </p>
-        <div class="sell-btn flex items-center mx-auto  justify-center text-white">
+        <div class="sell-btn flex items-center mx-auto cursor-pointer justify-center text-white">
           Place A Bid
         </div>
       </div>
