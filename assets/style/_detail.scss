@@ -1,49 +1,77 @@
-.Detail{
-    box-shadow: 0 0 11px 0 rgba(0,0,0,0.25);
-    padding-top: 61.49px;
-    padding-bottom: 53px;
-    .photo{
-        background-color: #f9f9f9;
-        width: 422px;
-        height: 422px;
-        box-shadow: 0 0 9px 1px rgba(0,0,0,0.10);
-        margin-left: 56px;
+.Detail {
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.25);
+  padding-top: 61.49px;
+  padding-bottom: 53px;
+  .photo {
+    background-color: #f9f9f9;
+    width: 422px;
+    height: 422px;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.1);
+    margin-left: 56px;
+  }
+  .content {
+    margin-left: 80px;
+    h1 {
+      font-size: 36px;
     }
-    .content{
-        margin-left: 80px;
-        h1{
-            font-size: 36px;
-            
-        }
-        .price{
-            color: #C91EFA;
-            font-size: 36px;
-            margin-top: 30px;
-        }
-        .in-dolor{
-            color: #00000066;
-            font-size: 24px;
-            text-indent: 3px;
+    .price {
+      color: #c91efa;
+      font-size: 36px;
+      margin-top: 30px;
+    }
+    .in-dolor {
+      color: #00000066;
+      font-size: 24px;
+      text-indent: 3px;
+    }
+    .details {
+      font-size: 14px;
+      line-height: 149.07%;
+      width: 475px;
+      margin-top: 54px;
+    }
+    .sell-btn {
+      margin-left: 212px;
+      background-color: #c91efa;
+      margin-top: 32px;
 
-        }
-        .details{
-            font-size: 14px;
-line-height: 149.07%;
-width: 475px;
-margin-top: 54px;
-        }
-        .sell-btn{
-            margin-left: 212px;
-            background-color: #C91EFA;
-            margin-top: 32px;
+      width: 271px;
+      height: 66px;
+      border-radius: 19px;
+    }
+  }
+  .creator {
+    margin-left: 88px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+@media (max-width: 640px) {
+  .Detail {
+      .photo{
+          margin: auto;
+          width: 100%;
+      }
+    .content {
+        margin: auto;
+      .details {
+        font-size: 14px;
+        line-height: 149.07%;
+        width: 350px;
+        margin-top: 54px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+      }
+      .sell-btn {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #c91efa;
+        margin-top: 32px;
 
-            width: 271px;
-height: 66px;
-border-radius: 19px;
-        }
+        width: 271px;
+        height: 66px;
+        border-radius: 19px;
+      }
     }
-    .creator{
-        margin-left: 88px;
-        color: rgba(0, 0, 0, 0.4);
-    }
+  }
 }
