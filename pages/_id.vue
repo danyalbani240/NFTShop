@@ -8,8 +8,8 @@
     </div>
     <TheDetail />
     <TheRelated />
-    <div class="flex justify-between" style="padding: 67px 30px">
-      <img src="../assets/images/52.svg" alt="" /><img
+    <div class="flex justify-between flex-wrap " style="padding: 67px 30px">
+      <img class="flex-1" src="../assets/images/52.svg" alt="" /><img class="flex-1"
         src="../assets/images/52.svg"
         alt=""
       />
