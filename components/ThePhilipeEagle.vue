@@ -3,8 +3,8 @@
     <h1>The Philippine Eagle</h1>
     <div class="upload-token">
       <BaseHeader>Upload Token</BaseHeader>
-      <div class="flex justify-between">
-        <div style="margin-left: 21px">
+      <div class="flex justify-center md:justify-between flex-wrap">
+        <div>
           <div class="flex">
             <img
               class="mr-1.5"
@@ -30,17 +30,17 @@
             <p>Acceptable formats JPG, PNG, MP</p>
           </div>
         </div>
-        <BaseUpload style="margin-right: 148px" />
+        <BaseUpload class="mx-auto"  />
       </div>
     </div>
     <div class="upload-currency mt-20">
       <BaseHeader>Upload Currency password preview </BaseHeader>
-      <div class="flex justify-between items-center mt-14">
+      <div class="flex justify-center flex-wrap md:justify-between items-center mt-14">
         <p style="color: rgba(0, 0, 0, 0.4); width: 431px; margin-left: 21px">
           To display your currency password, you need a photo to preview. Upload
           your desired file
         </p>
-        <BaseUpload style="margin-right: 148px" />
+        <BaseUpload class="mt-10 md:mt-0" />
       </div>
     </div>
     <div class="further-information mt-14">
@@ -87,7 +87,9 @@
       <BaseInput style="width: 705px; margin-top: 73px">
         Supply number
       </BaseInput>
-      <button class="create-token-btn flex justify-center items-center mx-auto text-2xl">
+      <button
+        class="create-token-btn flex justify-center items-center mx-auto text-2xl"
+      >
         create token
       </button>
     </div>
@@ -126,7 +128,11 @@ export default {}
     margin-top: 90px;
     > div {
       margin-top: 65px;
+      > :last-child {
+        margin-right: 148px;
+      }
       > div {
+        margin-left: 21px;
         div {
           margin: 13.5px 0;
           p {
@@ -135,6 +141,11 @@ export default {}
         }
       }
     }
+  }
+}
+@media (max-width: 768px) {
+  .eagle-container {
+    padding-left: 10px;
   }
 }
 </style>
