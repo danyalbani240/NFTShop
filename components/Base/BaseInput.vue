@@ -1,9 +1,9 @@
 <template>
   <div class="flex base-input-container justify-between items-center">
-    <p class="flex justify-center items-center flex-1">
+    <p class="flex justify-center items-center w-4/12 px-10 text-center">
       <slot></slot>
     </p>
-    <input type="text" :class="{'minimal': minimal, 'w-517':w517}" :placeholder="placeholder" class="base-input h-full w-563" />
+    <input type="text" :class="{'minimal': minimal,}" :placeholder="placeholder" class="base-input h-full flex-1" />
   </div>
 </template>
 
@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .base-input-container {
   background-color: rgba(244, 244, 244, 0.97);
   min-height: 50px;
@@ -37,6 +38,7 @@ export default {
     color: #1d1355;
     font-size: 18px;
     // margin-left: 36px;
+    
   }
   input {
     border-radius: 22.5px 12px 12px 22.5px;
