@@ -14,7 +14,7 @@
         alt=""
       />
     </div>
-    <TheRelated style="margin-bottom: 198px" />
+    <TheRela style="margin-bottom: 198px" />
     <TheFooter />
   </div>
 </template>

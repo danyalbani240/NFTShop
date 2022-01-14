@@ -5,7 +5,7 @@
     </div>
     <div style="margin-top: 60px" class="flex justify-between items-center">
       <div
-        id="button-prev-relacionados"
+        id="button-prev-rela"
         class="prev cursor-pointer flex items-center justify-center"
       >
         <img src="../assets/images/prev.svg" alt="" />
@@ -77,7 +77,7 @@
         </div>
       </div>
       <div
-        id="button-next-relacionados"
+        id="button-next-rela"
         class="next cursor-pointer flex items-center justify-center"
       >
         <img src="../assets/images/next.svg" alt="" />
@@ -95,8 +95,8 @@ export default {
         loop: true,
         spaceBetween: 30,
         navigation: {
-          nextEl: '#button-next-relacionados',
-          prevEl: '#button-prev-relacionados',
+          nextEl: '#button-next-rela',
+          prevEl: '#button-prev-rela',
         },
         breakpoints: {
           1024: {
