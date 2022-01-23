@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-      <div class="card-image"></div>
+      <div class="card-image bg-cover"></div>
       <div class="card-body pt-2.5">
         <p class="text-sm ml-3">Colourful ASA</p>
         <p class="text-xs mr-5 text-right mt-1">179.00BUSD</p>
