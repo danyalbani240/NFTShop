@@ -1,5 +1,5 @@
 <template>
-  <div class="footer w-full flex-col  flex  text-white">
+  <div class="footer bg-cover w-full flex-col  flex  text-white">
     <div class="text-4xl mt-12 ml-16">logo name</div>
     <div class="flex ml-16 justify-center sm:justify-evenly mt-10 flex-wrap">
       <div class="footer-secs flex-1">
