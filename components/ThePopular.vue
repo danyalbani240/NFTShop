@@ -86,7 +86,7 @@ export default {
   data() {
     return {
       options: {
-        slidesPerView: 1,
+        
         loop: true,
         spaceBetween: 30,
         navigation: {
