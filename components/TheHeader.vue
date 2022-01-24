@@ -24,7 +24,7 @@
         <div class="buttons flex justify-between">
           <div class="h-full cart cursor-pointer"></div>
           <div class="divider"></div>
-          <div class="profile h-full w-6"></div>
+          <div class="profile cursor-pointer h-full w-6"></div>
         </div>
       </div>
       <!-- mobile -->
