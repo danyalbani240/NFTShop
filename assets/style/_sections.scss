@@ -1,16 +1,28 @@
-.sections{
-    width: 959px;
-height: 123px;
+.sections {
+  width: 959px;
+  height: 123px;
 
-}
-@media(max-width:1024px){
-    .sections{
-        width: 100vw;
-        overflow-x: scroll;
-        background: linear-gradient(180deg, rgba(29, 19, 85, 0) 4.44%, rgba(28, 18, 84, 0.2) 100%);
-        margin-top:0;
-        >div{
-           margin: 0 40px;
-        }
+  > div {
+    cursor: pointer;
+  }
+  > div:hover {
+    >img {
+      transform: scale(1.25);
     }
+  }
+}
+@media (max-width: 1024px) {
+  .sections {
+    width: 100vw;
+    overflow-x: scroll;
+    background: linear-gradient(
+      180deg,
+      rgba(29, 19, 85, 0) 4.44%,
+      rgba(28, 18, 84, 0.2) 100%
+    );
+    margin-top: 0;
+    > div {
+      margin: 0 40px;
+    }
+  }
 }
