@@ -17,7 +17,7 @@
       <div class="buttons hidden lg:flex justify-between">
         <div class="h-full cart cursor-pointer"></div>
         <div class="divider"></div>
-        <div class="profile h-full w-6"></div>
+        <div class="profile cursor-pointer h-full w-6"></div>
       </div>
     </nav>
     <div class="hero-comment ml-2 inline-flex flex-col items-center justify-center mt-10 sm:mt-14 2xl:mt-44 md:mt-20 lg:mt-28">
