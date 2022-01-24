@@ -5,8 +5,8 @@
     </div>
     <hooper :settings="hooperSettings">
       <slide
-        ><div class="flex justify-evenly">
-          <div class="flex items-center sm:px-10 flex-1">
+        ><div class="flex justify-evenly question-slide">
+          <div class="flex items-center sm:px-20 flex-1">
             <div class="flex-col flex-1 justify-between flex">
               <div class="flex">
                 <img
@@ -18,7 +18,7 @@
               </div>
               <div class="flex items-start mt-8 lg:items-center">
                 <img class="mr-10" src="../assets/images/support.svg" alt="" />
-                <p class="text-2xl w-full q-describe">
+                <p class=" w-full q-describe">
                   To list an NFT for sale, our team will first of all approve
                   the content to make sure it’s appropriate for listing. This
                   process usually takes 4-8 hours. Upon successful approval,
@@ -38,8 +38,8 @@
           /></div
       ></slide>
       <slide
-        ><div class="flex justify-evenly">
-          <div class="flex items-center sm:px-10 flex-1">
+        ><div class="flex justify-evenly question-slide">
+          <div class="flex items-center sm:px-20 flex-1">
             <div class="flex-col flex-1 justify-between flex">
               <div class="flex">
                 <img
@@ -51,7 +51,7 @@
               </div>
               <div class="flex items-start mt-8 lg:items-center">
                 <img class="mr-10" src="../assets/images/support.svg" alt="" />
-                <p class="text-2xl w-full q-describe">
+                <p class=" w-full q-describe">
                   To list an NFT for sale, our team will first of all approve
                   the content to make sure it’s appropriate for listing. This
                   process usually takes 4-8 hours. Upon successful approval,
@@ -152,11 +152,11 @@ export default {
   min-height: 300px;
   margin-top: 60px;
 }
-.hooper-prev{
-  top: 2rem !important;
+.hooper-prev {
+  top: 4rem !important;
 }
-.hooper-next{
-  bottom: 9rem !important;
+.hooper-next {
+  bottom: 4rem !important;
 }
 .hooper-prev,
 .hooper-next {
