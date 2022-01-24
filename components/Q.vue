@@ -168,7 +168,7 @@ export default {
 }
 @media (max-width: 800px) {
   .hooper {
-    min-height: 400px;
+    min-height: 380px;
   }
   .hooper-navigation {
     display: none;
@@ -178,16 +178,5 @@ export default {
     bottom: 0;
   }
 }
-@media (max-width: 640px) {
-  .hooper {
-    min-height: 636px;
-  }
-  .hooper-navigation {
-    display: none;
-  }
-  .hooper-pagination {
-    display: flex;
-    bottom: 0;
-  }
-}
+
 </style>
