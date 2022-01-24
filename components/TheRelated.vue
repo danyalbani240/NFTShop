@@ -10,7 +10,7 @@
       >
         <img src="../assets/images/prev.svg" alt="" />
       </div>
-      <div class="popular-items-container flex flex-wrap justify-between">
+      <div class="popular-items-container overflow-x-hidden flex flex-wrap justify-between">
         <div v-swiper:mySwiper="options">
           <div class="swiper-wrapper flex justify-between">
             <BaseCard
