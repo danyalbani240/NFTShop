@@ -20,7 +20,7 @@
         <div class="profile h-full w-6"></div>
       </div>
     </nav>
-    <div class="hero-comment ml-2 inline-flex flex-col items-center justify-center mt-10 sm:mt-14 md:mt-20 lg:mt-28">
+    <div class="hero-comment ml-2 inline-flex flex-col items-center justify-center mt-10 sm:mt-14 2xl:mt-44 md:mt-20 lg:mt-28">
       <h2 class="sm:text-2xl lg:text-4xl text-lg font-bold">Turn Clicks Into</h2>
       <img class="nft-head"  src="../assets/images/NFText.svg" alt="">
       <p class="hidden sm:block">Must explain to you how all this mistaken idea of pleasure and praising pain was born and will give you a complete account of the system, and expound the actual teachings.</p>

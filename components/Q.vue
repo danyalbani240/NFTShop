@@ -6,7 +6,7 @@
     <hooper :settings="hooperSettings">
       <slide
         ><div class="flex justify-evenly">
-          <div class="flex items-center px-10 flex-1">
+          <div class="flex items-center sm:px-10 flex-1">
             <div class="flex-col flex-1 justify-between flex">
               <div class="flex">
                 <img
@@ -39,7 +39,7 @@
       ></slide>
       <slide
         ><div class="flex justify-evenly">
-          <div class="flex items-center px-10 flex-1">
+          <div class="flex items-center sm:px-10 flex-1">
             <div class="flex-col flex-1 justify-between flex">
               <div class="flex">
                 <img
@@ -180,7 +180,7 @@ export default {
 }
 @media (max-width: 640px) {
   .hooper {
-    min-height: 600px;
+    min-height: 636px;
   }
   .hooper-navigation {
     display: none;
