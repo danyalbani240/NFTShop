@@ -11,18 +11,16 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/NFTLogo.svg' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~/assets/style/main.scss'
-  ],
+  css: ['~/assets/style/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: "~/plugins/aos.js", ssr: false, mode: "client" },
-    { src: "~/plugins/vue-awesome-swiper.js",  mode: "client" },
+    { src: '~/plugins/aos.js', ssr: false, mode: 'client' },
+    { src: '~/plugins/vue-awesome-swiper.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
