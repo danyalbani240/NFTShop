@@ -1,6 +1,6 @@
 <template>
   <div class="eagle-container bg-white w-11/12 mx-auto">
-    <h1>The Philippine Eagle</h1>
+    <h1 class="font-extrabold">The Philippine Eagle</h1>
     <div class="upload-token">
       <BaseHeader>Upload Token</BaseHeader>
       <div class="flex justify-center md:justify-between flex-wrap">
@@ -53,7 +53,7 @@
       <BaseInput> Description </BaseInput>
       <div class="flex adder items-center justify-evenly mt-14 flex-wrap">
         <div class="flex">
-          <img class="mr-2" src="../assets/images/add.svg" alt="" />
+          <img class="mr-2 cursor-pointer" src="../assets/images/add.svg" alt="" />
           <BaseInput> Manufacturer Group </BaseInput>
         </div>
         <BaseInput class="mt-4" :minimal="true"> Responsibility </BaseInput>
@@ -76,7 +76,7 @@
       <BaseInput> Initial price </BaseInput>
       <BaseInput> Supply number </BaseInput>
       <button
-        class="create-token-btn flex justify-center items-center mx-auto text-2xl"
+        class="create-token-btn flex justify-center transition-all items-center mx-auto text-2xl"
       >
         create token
       </button>
@@ -91,12 +91,15 @@ export default {}
 <style lang="scss">
 .create-token-btn {
   background: #c91efa;
-  box-shadow: 0px 0px 15px #c91efa;
   border-radius: 19px;
   width: 271px;
   height: 66px;
   color: white;
   margin-top: 130px;
+}
+.create-token-btn:hover{
+  box-shadow: 0px 0px 15px #c91efa;
+
 }
 .eagle-container {
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
