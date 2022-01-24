@@ -152,6 +152,12 @@ export default {
   min-height: 300px;
   margin-top: 60px;
 }
+.hooper-prev{
+  top: 2rem !important;
+}
+.hooper-next{
+  bottom: 9rem !important;
+}
 .hooper-prev,
 .hooper-next {
   left: 0 !important;
