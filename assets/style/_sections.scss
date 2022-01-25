@@ -17,6 +17,10 @@
   }
 }
 @media (max-width: 1024px) {
+  .sections-container {
+    background: none;
+    box-shadow: none;
+  }
   .sections {
     width: 100vw;
     overflow-x: scroll;
