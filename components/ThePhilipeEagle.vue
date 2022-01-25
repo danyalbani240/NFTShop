@@ -1,10 +1,10 @@
 <template>
-  <div class="eagle-container bg-white w-11/12 mx-auto">
+  <div class="eagle-container bg-white w-full md:w-11/12  mx-auto">
     <h1 class="font-extrabold">The Philippine Eagle</h1>
     <div class="upload-token">
       <BaseHeader>Upload Token</BaseHeader>
       <div class="flex justify-center md:justify-between flex-wrap">
-        <div>
+        <div  class="flex-1 " style="min-width:284px">
           <div class="flex">
             <img
               class="mr-1.5"
@@ -52,24 +52,24 @@
       <BaseInput> Email Address </BaseInput>
       <BaseInput> Description </BaseInput>
       <div class="flex adder items-center justify-evenly mt-14 flex-wrap">
-        <div class="flex">
-          <img class="mr-2 cursor-pointer" src="../assets/images/add.svg" alt="" />
-          <BaseInput> Manufacturer Group </BaseInput>
+        <div  class="flex flex-wrap-reverse md:flex-1">
+          <img class="sm:mr-2 mx-auto cursor-pointer" src="../assets/images/add.svg" alt="" />
+          <BaseInput  class="md:flex-1 mx-auto manufactor sm:mr-6"> Manufacturer Group </BaseInput>
         </div>
-        <BaseInput class="mt-4" :minimal="true"> Responsibility </BaseInput>
+        <BaseInput class="mt-4 sm:mt-0 mr-10" style="width:323px" :minimal="true"> Responsibility </BaseInput>
       </div>
       <div class="flex soc-media flex-wrap justify-evenly mt-20">
-        <BaseInput :minimal="true">
-          <img src="../assets/images/linkedin.svg" alt="" />
+        <BaseInput class=" my-5 md:my-0" :minimal="true">
+          <img class="absolute" src="../assets/images/linkedin.svg" alt="" />
         </BaseInput>
-        <BaseInput :minimal="true">
-          <img src="../assets/images/whatsapp.svg" alt="" />
+        <BaseInput class=" my-5 md:my-0" :minimal="true">
+          <img class="absolute" src="../assets/images/whatsapp.svg" alt="" />
         </BaseInput>
-        <BaseInput :minimal="true">
-          <img src="../assets/images/twitter.svg" alt="" />
+        <BaseInput class=" my-5 md:my-0" :minimal="true">
+          <img class="absolute" src="../assets/images/twitter.svg" alt="" />
         </BaseInput>
-        <BaseInput :minimal="true">
-          <img src="../assets/images/instagram.svg" alt="" />
+        <BaseInput class=" my-5 md:my-0 mr-12" :minimal="true">
+          <img class="absolute" src="../assets/images/instagram.svg" alt="" />
         </BaseInput>
       </div>
       <BaseInput> Direct access link </BaseInput>
@@ -89,6 +89,18 @@ export default {}
 </script>
 
 <style lang="scss">
+.upload-token {
+  .upload{
+    margin-right: 148px;
+  }
+}
+@media (max-width:768px){
+  .upload-token {
+  .upload{
+    margin: 0;
+  }
+}
+}
 .create-token-btn {
   background: #c91efa;
   border-radius: 19px;
@@ -119,9 +131,7 @@ export default {}
     margin-top: 90px;
     > div {
       margin-top: 65px;
-      > :last-child {
-        margin-right: 148px;
-      }
+      
       > div {
         margin-left: 21px;
         div {
@@ -185,7 +195,7 @@ export default {}
       .base-input-container {
         width: 224px;
         height: 50px;
-        margin: 5px 0;
+       
       }
     }
   }
@@ -210,6 +220,7 @@ export default {}
 @media (max-width: 768px) {
   .eagle-container {
     padding-left: 10px;
+    border-radius: 0;
     .further-information {
       > .base-input-container:nth-child(2),
       > .base-input-container:nth-child(3),
@@ -222,6 +233,11 @@ export default {}
         margin-top: 73px;
       }
     }
+  }
+}
+@media (max-width: 400px) {
+  .manufactor{
+    width:330px
   }
 }
 </style>

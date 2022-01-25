@@ -1,6 +1,6 @@
 <template>
   <div class="flex base-input-container justify-between items-center">
-    <p class="flex justify-center items-center w-4/12 px-10 text-center">
+    <p class="flex justify-center items-center w-4/12 text-base  text-center" :class="{'px-10':!minimal,'px-5':!!minimal}">
       <slot></slot>
     </p>
     <input type="text" :class="{'minimal': minimal,}" :placeholder="placeholder" class="base-input h-full flex-1" />
@@ -36,7 +36,7 @@ export default {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.32);
   p {
     color: #1d1355;
-    font-size: 18px;
+    font-size: 16px;
     // margin-left: 36px;
     
   }
@@ -45,6 +45,12 @@ export default {
     border: 1px solid #c91efa;
     min-height: 50px;
     padding-left: 24px;
+    
+  }
+  input:focus{
+      outline: none;
+      border: 2px solid #c91efa;
+    
   }
   input::placeholder {
     color: rgba(0, 0, 0, 0.4);
