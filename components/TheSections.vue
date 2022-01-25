@@ -91,6 +91,10 @@ export default {
     return {
       options: {
         slidesPerView: 3,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       },
     }
   },
