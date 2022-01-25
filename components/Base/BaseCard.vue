@@ -1,6 +1,6 @@
 <template>
   <nuxt-link to="1"
-    ><div class="card transition-all">
+    ><div class="card transition-all ">
       <div class="card-image bg-cover"></div>
       <div class="card-body pt-2.5">
         <p class="text-sm ml-3">Colourful ASA</p>

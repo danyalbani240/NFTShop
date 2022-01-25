@@ -8,67 +8,102 @@
     </div>
     <div class="popular-items-container flex flex-wrap justify-between">
       <div v-swiper:mySwiper="options">
-        <div class="swiper-wrapper flex justify-between">
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="500"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="800"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="1300"
-          /><BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="500"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="800"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="1300"
-          />
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="500"
+            />
+          </div>
 
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="500"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="800"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          />
-          <BaseCard
-            class="swiper-slide"
-            data-aos="flip-left"
-            data-aos-duration="1300"
-          />
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="800"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="1300"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="500"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="800"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="1300"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="500"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="800"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <BaseCard
+              class="mx-auto"
+              data-aos="flip-left"
+              data-aos-duration="1300"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -86,7 +121,6 @@ export default {
   data() {
     return {
       options: {
-        
         loop: true,
         spaceBetween: 30,
         navigation: {
@@ -109,6 +143,7 @@ export default {
           360: {
             slidesPerView: 1,
             spaceBetween: 10,
+           
           },
         },
         autoplay: {
@@ -121,8 +156,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .swiper-slide {
   height: auto !important;
 }
+
 </style>
