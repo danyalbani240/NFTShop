@@ -1,18 +1,18 @@
-.searchbox{
-    
-    height: 45px;
-    
-    border-radius: 7px;
-    overflow: hidden;
-    button{
-        width: 59px;
-        background-color: #DF25FD;
-    }
-    input{
-        background-color: rgba(221, 220, 220,0.35);
-    }
-    input::placeholder{
-        color: rgba(255,255,255,0.28);
-        padding-left: 18px;
-    }
+.searchbox {
+  height: 45px;
+
+  border-radius: 7px;
+  overflow: hidden;
+  color: white;
+  button {
+    width: 59px;
+    background-color: #df25fd;
+  }
+  input {
+    background-color: rgba(221, 220, 220, 0.35);
+    padding-left: 18px;
+  }
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.28);
+  }
 }
