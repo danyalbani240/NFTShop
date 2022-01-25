@@ -48,3 +48,6 @@
 .flip360:hover{
     animation: flip360 1s ease-in-out;
 }
+.cart:hover,.profile:hover{
+transform: scale(1.1);
+}
