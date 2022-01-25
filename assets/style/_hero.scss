@@ -149,5 +149,14 @@
   .hero {
     padding-left: 76px;
     padding-right: 48px;
+    min-height: 915px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .hero {
+    padding-left: 76px;
+    padding-right: 48px;
+    min-height: 1065px;
   }
 }
