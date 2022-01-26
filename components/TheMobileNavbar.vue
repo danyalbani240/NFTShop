@@ -1,7 +1,7 @@
 <template>
   <transition name="slide">
     <div
-      class="lg:hidden fixed w-screen px-5 overflow-hidden py-5 right-0 mobile-nav z-10 transition-all top-0 h-screen"
+      class="lg:hidden fixed w-screen bg-cover px-5 overflow-hidden py-5 right-0 mobile-nav z-10 transition-all top-0 h-screen"
       v-if="isOpen"
     >
       <div class="flex justify-between w-full">
@@ -25,10 +25,9 @@
         style="left: 50%; transform: translateX(-50%)"
         class="absolute bottom-6 inset-x-auto text-white mx-auto text-lg"
       >
-        logo name
-      </div>
-    </div></transition
-  >
+        <img src="../assets/images/NFTLogo.svg" alt="" />
+      </div></div
+  ></transition>
 </template>
 
 <script>
