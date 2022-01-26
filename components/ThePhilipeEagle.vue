@@ -68,24 +68,31 @@
       </BaseInput>
 
       <div
-        class="flex w-full adder items-center justify-evenly mt-14 flex-wrap"
+        class="flex w-full relative adder items-center justify-evenly mt-14 flex-wrap"
       >
-        <div class="flex sm:w-8/12 w-full flex-wrap-reverse md:flex-1">
-          <img
-            class="sm:mr-2 mx-auto cursor-pointer"
-            src="../assets/images/add.svg"
-            alt=""
-          />
+        <img
+          class="sm:mr-2 mx-auto cursor-pointer absolute bottom-0 left-0"
+          src="../assets/images/add.svg"
+          alt=""
+          @click="adders.push('1')"
+        />
+        <div
+          v-for="item in adders"
+          class="flex sm:w-11/12 mt-5 mx-auto w-full flex-wrap-reverse"
+        >
           <BaseInput
             placeholder="Email Your way of communicating with us, enter your email"
             class="md:flex-1 sm:mx-auto manufactor w-11/12 sm:mr-6"
           >
             Manufacturer Group
           </BaseInput>
+          <BaseInput
+            class="mt-4 sm:mt-0 mr-10 sm:w-3/12 w-11/12"
+            :minimal="true"
+          >
+            Responsibility
+          </BaseInput>
         </div>
-        <BaseInput class="mt-4 sm:mt-0 mr-10 sm:w-3/12 w-11/12" :minimal="true">
-          Responsibility
-        </BaseInput>
       </div>
       <div
         class="flex soc-media w-11/12 mx-auto flex-wrap justify-between mt-20"
@@ -131,7 +138,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      adders: ['1'],
+    }
+  },
+}
 </script>
 
 <style lang="scss">
