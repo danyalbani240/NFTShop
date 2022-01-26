@@ -1,15 +1,28 @@
 <template>
   <div
-    @click="$emit('click', $event)"
-    class="upload flex flex-col items-center cursor-pointer justify-center transition-all"
+    @click="clicked"
+    class="upload flex relative flex-col overflow-hidden items-center cursor-pointer justify-center transition-all"
   >
     <img src="../../assets/images/upload.svg" alt="" />
     <p>upload</p>
+    <input
+      type="file"
+      style="position: absolute; visibility: hidden"
+      class="w-full h-full"
+      name=""
+      id="file"
+    />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    clicked() {
+      document.querySelector('#file').click()
+    },
+  },
+}
 </script>
 
 <style scoped lang="scss">

@@ -1,10 +1,10 @@
 <template>
-  <div class="eagle-container bg-white w-full md:w-11/12  mx-auto">
+  <div class="eagle-container bg-white w-full md:w-11/12 mx-auto">
     <h1 class="font-extrabold">The Philippine Eagle</h1>
-    <div class="upload-token">
+    <div class="upload-token w-full">
       <BaseHeader>Upload Token</BaseHeader>
-      <div class="flex justify-center md:justify-between flex-wrap">
-        <div  class="flex-1 " style="min-width:284px">
+      <div class="flex w-10/12 justify-center md:justify-between flex-wrap">
+        <div class="flex-1" style="min-width: 284px">
           <div class="flex">
             <img
               class="mr-1.5"
@@ -33,10 +33,10 @@
         <BaseUpload class="mx-auto" />
       </div>
     </div>
-    <div class="upload-currency mt-20">
+    <div class="upload-currency mt-20 w-full">
       <BaseHeader>Upload Currency password preview </BaseHeader>
       <div
-        class="flex justify-center flex-wrap md:justify-between items-center mt-14"
+        class="flex justify-center w-10/12 flex-wrap md:justify-between items-center mt-14"
       >
         <p>
           To display your currency password, you need a photo to preview. Upload
@@ -45,36 +45,48 @@
         <BaseUpload class="mt-10 md:mt-0" />
       </div>
     </div>
-    <div class="further-information mt-14">
+    <div class="further-information mt-14 w-full">
       <BaseHeader>Further Information</BaseHeader>
-      <BaseInput> Token Name </BaseInput>
-      <BaseInput> Website Link </BaseInput>
-      <BaseInput> Email Address </BaseInput>
-      <BaseInput> Description </BaseInput>
-      <div class="flex adder items-center justify-evenly mt-14 flex-wrap">
-        <div  class="flex flex-wrap-reverse md:flex-1">
-          <img class="sm:mr-2 mx-auto cursor-pointer" src="../assets/images/add.svg" alt="" />
-          <BaseInput  class="md:flex-1 mx-auto manufactor sm:mr-6"> Manufacturer Group </BaseInput>
+      <BaseInput class="sm:w-7/12 w-11/12"> Token Name </BaseInput>
+      <BaseInput class="sm:w-7/12 w-11/12"> Website Link </BaseInput>
+      <BaseInput class="sm:w-7/12 w-11/12"> Description </BaseInput>
+      <BaseInput class="sm:w-7/12 w-11/12"> Email Address </BaseInput>
+      <div
+        class="flex w-full adder items-center justify-evenly mt-14 flex-wrap"
+      >
+        <div class="flex sm:w-8/12 w-full flex-wrap-reverse md:flex-1">
+          <img
+            class="sm:mr-2 mx-auto cursor-pointer"
+            src="../assets/images/add.svg"
+            alt=""
+          />
+          <BaseInput class="md:flex-1 sm:mx-auto manufactor w-11/12 sm:mr-6">
+            Manufacturer Group
+          </BaseInput>
         </div>
-        <BaseInput class="mt-4 sm:mt-0 mr-10" style="width:323px" :minimal="true"> Responsibility </BaseInput>
+        <BaseInput class="mt-4 sm:mt-0 mr-10 sm:w-3/12 w-11/12" :minimal="true">
+          Responsibility
+        </BaseInput>
       </div>
-      <div class="flex soc-media flex-wrap justify-evenly mt-20">
-        <BaseInput class=" my-5 md:my-0" :minimal="true">
+      <div
+        class="flex soc-media w-11/12 mx-auto flex-wrap justify-between mt-20"
+      >
+        <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
           <img class="absolute" src="../assets/images/linkedin.svg" alt="" />
         </BaseInput>
-        <BaseInput class=" my-5 md:my-0" :minimal="true">
+        <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
           <img class="absolute" src="../assets/images/whatsapp.svg" alt="" />
         </BaseInput>
-        <BaseInput class=" my-5 md:my-0" :minimal="true">
+        <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
           <img class="absolute" src="../assets/images/twitter.svg" alt="" />
         </BaseInput>
-        <BaseInput class=" my-5 md:my-0 mr-12" :minimal="true">
+        <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
           <img class="absolute" src="../assets/images/instagram.svg" alt="" />
         </BaseInput>
       </div>
-      <BaseInput> Direct access link </BaseInput>
-      <BaseInput> Initial price </BaseInput>
-      <BaseInput> Supply number </BaseInput>
+      <BaseInput class="sm:w-7/12 w-11/12"> Direct access link </BaseInput>
+      <BaseInput class="sm:w-6/12 w-11/12"> Initial price </BaseInput>
+      <BaseInput class="sm:w-6/12 w-11/12"> Supply number </BaseInput>
       <button
         class="create-token-btn flex justify-center transition-all items-center mx-auto text-2xl"
       >
@@ -89,17 +101,12 @@ export default {}
 </script>
 
 <style lang="scss">
-.upload-token {
-  .upload{
-    margin-right: 148px;
-  }
-}
-@media (max-width:768px){
+@media (max-width: 768px) {
   .upload-token {
-  .upload{
-    margin: 0;
+    .upload {
+      margin: 0;
+    }
   }
-}
 }
 .create-token-btn {
   background: #c91efa;
@@ -109,9 +116,8 @@ export default {}
   color: white;
   margin-top: 130px;
 }
-.create-token-btn:hover{
+.create-token-btn:hover {
   box-shadow: 0px 0px 15px #c91efa;
-
 }
 .eagle-container {
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
@@ -129,10 +135,10 @@ export default {}
   }
   .upload-token {
     margin-top: 90px;
-    > div {
+    > div:nth-child(2) {
       margin-top: 65px;
-      
-      > div {
+
+      > div:first-child {
         margin-left: 21px;
         div {
           margin: 13.5px 0;
@@ -151,72 +157,68 @@ export default {}
         margin-left: 21px;
       }
     }
-    > :last-child {
-      margin-right: 148px;
-    }
   }
   .further-information {
     > .base-input-container:nth-child(2),
     > .base-input-container:nth-child(3),
     > .base-input-container:nth-child(5) {
-      width: 766px;
+      // width: 766px;
       margin-top: 73px;
     }
 
     > .base-input-container:nth-child(4) {
-      width: 766px;
+      // width: 766px;
       margin-top: 73px;
       height: 196px;
     }
     > .base-input-container:nth-child(8) {
-      width: 766px;
+      //   width: 766px;
       margin-top: 73px;
     }
     > .base-input-container:nth-child(9) {
-      width: 705px;
+      //   width: 705px;
       margin-top: 73px;
     }
     > .base-input-container:nth-child(10) {
-      width: 705px;
+      //   width: 705px;
       margin-top: 73px;
     }
-    > .addder {
-      > div:first-child {
-        .base-input-container {
-          width: 727px;
-        }
-      }
+    // > .addder {
+    //   > div:first-child {
+    //     .base-input-container {
+    //       width: 727px;
+    //     }
+    //   }
 
-      .base-input-container:nth-child(2) {
-        width: 323px;
-      }
-    }
-    .soc-media {
-      .base-input-container {
-        width: 224px;
-        height: 50px;
-       
-      }
-    }
+    //   .base-input-container:nth-child(2) {
+    //     width: 323px;
+    //   }
+    // }
+    // .soc-media {
+    //   .base-input-container {
+    //     width: 224px;
+    //     height: 50px;
+    //   }
+    // }
   }
 }
-@media (max-width: 1024px) {
-  .eagle-container {
-    padding-left: 10px;
-    .further-information {
-      > .base-input-container:nth-child(2),
-      > .base-input-container:nth-child(3),
-      > .base-input-container:nth-child(5),
-      > .base-input-container:nth-child(4),
-      > .base-input-container:nth-child(8),
-      > .base-input-container:nth-child(9),
-      > .base-input-container:nth-child(10) {
-        width: 680px;
-        margin-top: 73px;
-      }
-    }
-  }
-}
+// @media (max-width: 1024px) {
+//   .eagle-container {
+//     padding-left: 10px;
+//     .further-information {
+//       > .base-input-container:nth-child(2),
+//       > .base-input-container:nth-child(3),
+//       > .base-input-container:nth-child(5),
+//       > .base-input-container:nth-child(4),
+//       > .base-input-container:nth-child(8),
+//       > .base-input-container:nth-child(9),
+//       > .base-input-container:nth-child(10) {
+//         width: 680px;
+//         margin-top: 73px;
+//       }
+//     }
+//   }
+// }
 @media (max-width: 768px) {
   .eagle-container {
     padding-left: 10px;
@@ -229,15 +231,10 @@ export default {}
       > .base-input-container:nth-child(8),
       > .base-input-container:nth-child(9),
       > .base-input-container:nth-child(10) {
-        width: 80vw;
+        // width: 90vw;
         margin-top: 73px;
       }
     }
-  }
-}
-@media (max-width: 400px) {
-  .manufactor{
-    width:330px
   }
 }
 </style>
