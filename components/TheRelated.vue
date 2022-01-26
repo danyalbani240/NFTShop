@@ -10,7 +10,9 @@
       >
         <img src="../assets/images/prev.svg" alt="" />
       </div>
-      <div class="popular-items-container overflow-x-hidden flex flex-wrap justify-between">
+      <div
+        class="popular-items-container overflow-x-hidden flex flex-wrap justify-between"
+      >
         <div v-swiper:mySwiper="options">
           <div class="swiper-wrapper flex justify-between">
             <BaseCard
@@ -132,7 +134,7 @@ export default {
 }
 .prev,
 .next {
-  width: 36px;
+  min-width: 36px;
   height: 58px;
   background-color: #fbfafa;
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.25);
