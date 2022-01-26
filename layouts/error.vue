@@ -1,8 +1,8 @@
 <template>
   <div class="not-found">
-    <TheHero />
+    <!-- <TheHero />
     <TheSections />
-    <TheSort />
+    <TheSort /> -->
     <nuxt-link to="/">
       <div class="not-found flex justify-center flex-col">
         <img
