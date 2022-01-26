@@ -4,7 +4,7 @@
       style="width: 484px; margin-top: 11px"
       class="mx-auto justify-between hidden lg:flex text-white"
     >
-      <p>Home</p>
+      <nuxt-link to="/">Home</nuxt-link>
       <p>Nft Shop</p>
       <p>About</p>
       <p>Contact Us</p>
@@ -15,7 +15,6 @@
     >
       <div class="flex ml-8 items-center">
         <img src="../assets/images/NFTLogo.svg" alt="" />
-        <p class="ml-6 text-4xl hidden lg:block">logo name</p>
       </div>
 
       <TheSearchBox class="self-center lg:flex hidden w-5/12" />
@@ -36,7 +35,7 @@
         <div class="burger-line h-1 w-10 bg-white my-1.5"></div>
         <div class="burger-line h-1 w-10 bg-white my-1.5"></div>
       </div>
-      <TheMobileNavbar @closeNav="isNav = false" v-if="isNav" />
+      <TheMobileNavbar @closeNav="isNav = false" :isOpen="isNav" />
     </div>
   </div>
 </template>
