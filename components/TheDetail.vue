@@ -5,9 +5,9 @@
         <img src="../assets/images/Detail-Image.svg" alt="" />
       </div>
       <div class="content">
-        <h1>The Philippine Eagle</h1>
-        <p class="price">179.00BUSD</p>
-        <span class="in-dolor">≈= $ 1,999.00</span>
+        <h1 class="px-5">The Philippine Eagle</h1>
+        <p class="price px-5">179.00BUSD</p>
+        <span class="in-dolor px-5">≈= $ 1,999.00</span>
         <p class="details">
           The Philippine Eagle AKA the "Monkey-Eating Eagle". This loop and
           audio defines the Eagle's habitat, a tropical country surrounded by a
@@ -17,7 +17,9 @@
           of "Endangered Species Artworks”. 20% of the proceeds from each piece
           is pledged to the Philippine Eagle Foundation.
         </p>
-        <div class="sell-btn flex items-center mx-auto cursor-pointer justify-center text-white">
+        <div
+          class="sell-btn flex items-center mx-auto cursor-pointer justify-center text-white"
+        >
           Place A Bid
         </div>
       </div>
