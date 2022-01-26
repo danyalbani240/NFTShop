@@ -28,7 +28,7 @@
         <p class="mt-2.5">Painting</p>
       </div>
     </div>
-    <div class="md:hidden" v-swiper:mySwiper="options">
+    <div class="md:hidden mt-4" v-swiper:mySwiper="options">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="flex flex-col items-center">
