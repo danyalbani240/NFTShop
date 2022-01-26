@@ -48,9 +48,25 @@
     <div class="further-information mt-14 w-full">
       <BaseHeader>Further Information</BaseHeader>
       <BaseInput class="sm:w-7/12 w-11/12"> Token Name </BaseInput>
-      <BaseInput class="sm:w-7/12 w-11/12"> Website Link </BaseInput>
-      <BaseInput class="sm:w-7/12 w-11/12"> Description </BaseInput>
-      <BaseInput class="sm:w-7/12 w-11/12"> Email Address </BaseInput>
+      <BaseInput
+        placeholder="To view your products you need a website address. Enter the address"
+        class="sm:w-7/12 w-11/12"
+      >
+        Website Link </BaseInput
+      ><BaseInput
+        placeholder="This description will be displayed when your currency password is released"
+        class="sm:w-7/12 w-11/12"
+        :textArea="true"
+      >
+        Description
+      </BaseInput>
+      <BaseInput
+        placeholder="Email Your way of communicating with us, enter your email"
+        class="sm:w-7/12 w-11/12"
+      >
+        EmailAddress
+      </BaseInput>
+
       <div
         class="flex w-full adder items-center justify-evenly mt-14 flex-wrap"
       >
@@ -60,7 +76,10 @@
             src="../assets/images/add.svg"
             alt=""
           />
-          <BaseInput class="md:flex-1 sm:mx-auto manufactor w-11/12 sm:mr-6">
+          <BaseInput
+            placeholder="Email Your way of communicating with us, enter your email"
+            class="md:flex-1 sm:mx-auto manufactor w-11/12 sm:mr-6"
+          >
             Manufacturer Group
           </BaseInput>
         </div>
@@ -84,9 +103,24 @@
           <img class="absolute" src="../assets/images/instagram.svg" alt="" />
         </BaseInput>
       </div>
-      <BaseInput class="sm:w-7/12 w-11/12"> Direct access link </BaseInput>
-      <BaseInput class="sm:w-6/12 w-11/12"> Initial price </BaseInput>
-      <BaseInput class="sm:w-6/12 w-11/12"> Supply number </BaseInput>
+      <BaseInput
+        placeholder="Enter a direct link for admin access to review the product"
+        class="sm:w-7/12 w-11/12"
+      >
+        Direct access link
+      </BaseInput>
+      <BaseInput
+        placeholder="Enter an initial price to provide your currency code"
+        class="sm:w-6/12 w-11/12"
+      >
+        Initial price
+      </BaseInput>
+      <BaseInput
+        placeholder="Specify a specific number to supply (this number cannot be changed)"
+        class="sm:w-6/12 w-11/12"
+      >
+        Supply number
+      </BaseInput>
       <button
         class="create-token-btn flex justify-center transition-all items-center mx-auto text-2xl"
       >

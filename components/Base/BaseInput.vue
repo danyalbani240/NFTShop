@@ -1,9 +1,34 @@
 <template>
-  <div class="flex base-input-container justify-between items-center">
-    <p class="flex justify-center items-center w-4/12 text-base  text-center" :class="{'px-10':!minimal,'px-5':!!minimal}">
+  <div
+    v-if="textArea == false"
+    class="flex base-input-container justify-between items-center"
+  >
+    <p
+      class="flex justify-center items-center w-4/12 text-base text-center"
+      :class="{ 'px-10': !minimal, 'px-5': !!minimal }"
+    >
       <slot></slot>
     </p>
-    <input type="text" :class="{'minimal': minimal,}" :placeholder="placeholder" class="base-input h-full flex-1" />
+    <input
+      type="text"
+      :class="{ minimal: minimal }"
+      :placeholder="placeholder"
+      class="base-input h-full flex-1"
+    />
+  </div>
+  <div v-else class="flex base-input-container justify-between items-center">
+    <p
+      class="flex justify-center items-center w-4/12 text-base text-center"
+      :class="{ 'px-10': !minimal, 'px-5': !!minimal }"
+    >
+      <slot></slot>
+    </p>
+    <textarea
+      type="text"
+      :class="{ minimal: minimal }"
+      :placeholder="placeholder"
+      class="base-input h-full flex-1 pt-4"
+    />
   </div>
 </template>
 
@@ -14,19 +39,23 @@ export default {
       type: String,
       default: '',
     },
-    minimal:{
-      type:Boolean,
-      default:false,
-    }, w517:{
-      type:Boolean,
-      default:false,
-    }
+    minimal: {
+      type: Boolean,
+      default: false,
+    },
+    textArea: {
+      type: Boolean,
+      default: false,
+    },
+    w517: {
+      type: Boolean,
+      default: false,
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-
 .base-input-container {
   background-color: rgba(244, 244, 244, 0.97);
   min-height: 50px;
@@ -38,32 +67,31 @@ export default {
     color: #1d1355;
     font-size: 16px;
     // margin-left: 36px;
-    
   }
-  input {
+  input,
+  textarea {
     border-radius: 22.5px 12px 12px 22.5px;
     border: 1px solid #c91efa;
     min-height: 50px;
     padding-left: 24px;
-    
   }
-  input:focus{
-      outline: none;
-      border: 2px solid #c91efa;
-    
+  input,
+  textarea:focus {
+    outline: none;
+    border: 2px solid #c91efa;
   }
-  input::placeholder {
+  input,
+  textarea::placeholder {
     color: rgba(0, 0, 0, 0.4);
     font-size: 14px;
   }
   .w-563 {
     width: 563px;
   }
-  .minimal{
+  .minimal {
     width: 166px;
-
   }
-  .w-517{
+  .w-517 {
     width: 517px;
   }
 }
