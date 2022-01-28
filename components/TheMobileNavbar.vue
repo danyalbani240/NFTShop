@@ -8,9 +8,9 @@
         <div @click="closeNav" class="closer">
           <img class="w-10" src="../assets/images/closer.svg" alt="" />
         </div>
-        <div class="flex w-4/12 sm:w-2/12 mr-5 justify-between">
-          <img src="../assets/images/cart.svg" alt="" />
-          <img src="../assets/images/person.svg" alt="" />
+        <div class="flex icons mr-5 justify-between">
+          <img class="w-6 mr-5" src="../assets/images/cart.svg" alt="" />
+          <img class="w-6" src="../assets/images/person.svg" alt="" />
         </div>
       </div>
       <the-search-box class="w-11/12 mx-auto mt-10" />
@@ -18,7 +18,7 @@
         class="flex flex-col justify-between h-28 mt-6 text-white items-center"
       >
         <div class="link-item text-sm">Nft Shop</div>
-        <div class="link-item text-sm active">About</div>
+        <div class="link-item text-sm">About</div>
         <div class="link-item text-sm">Contact Us</div>
       </div>
       <div
