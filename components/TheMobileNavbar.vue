@@ -9,8 +9,8 @@
           <img class="w-10" src="../assets/images/closer.svg" alt="" />
         </div>
         <div class="flex icons mr-5 justify-between">
-          <img class="w-6 mr-5" src="../assets/images/cart.svg" alt="" />
-          <img class="w-6" src="../assets/images/person.svg" alt="" />
+          <img class="w-4 w-6 mr-5" src="../assets/images/cart.svg" alt="" />
+          <img class="w-4 w-6" src="../assets/images/person.svg" alt="" />
         </div>
       </div>
       <the-search-box class="w-11/12 mx-auto mt-10" />
