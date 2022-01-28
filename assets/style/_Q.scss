@@ -4,8 +4,8 @@
   padding-top: 21px;
   padding-left: 50px;
   padding-bottom: 65.66px;
-  .question-slide{
-    .q-describe{
+  .question-slide {
+    .q-describe {
       max-width: 583px;
     }
   }
@@ -31,7 +31,7 @@
 }
 @media (max-width: 768px) {
   .Q {
-    padding: 0 10px;
+    padding: 20px 10px;
     > div:nth-child(2) {
       > div {
         > div:first-child {
@@ -45,5 +45,4 @@
       }
     }
   }
-  
 }
