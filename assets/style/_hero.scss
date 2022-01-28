@@ -4,11 +4,6 @@
     background-image: url('../images/NFTLogo.svg');
   }
 }
-@media (max-width: 360px) {
-  .hero {
-    background-image: url(../images/hero-mobile.svg);
-  }
-}
 
 @media (max-width: 640px) {
   .hero {
@@ -106,13 +101,6 @@
         height: 27px;
         margin-top: 42px;
         animation: Slide_Left 2s forwards;
-        .cart {
-          background-image: url('../images/cart.svg');
-          width: 27px;
-        }
-        .profile {
-          background-image: url('../images/person.svg');
-        }
       }
     }
     .hero-comment {
