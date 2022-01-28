@@ -2,7 +2,7 @@
   <div class="flex flex-col head-nav text-white">
     <div
       style="width: 484px; margin-top: 11px"
-      class="mx-auto justify-between hidden lg:flex text-white"
+      class="mx-auto links justify-between hidden lg:flex text-white"
     >
       <nuxt-link to="/">Home</nuxt-link>
       <p>Nft Shop</p>
@@ -55,4 +55,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.links p:active,
+a:active {
+  color: #d622fb;
+}
+</style>
