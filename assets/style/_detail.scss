@@ -34,7 +34,8 @@
       margin-left: 212px;
       background-color: #c91efa;
       margin-top: 32px;
-
+      box-shadow: none;
+      transition: box-shadow 0.5s ease;
       width: 271px;
       height: 66px;
       border-radius: 19px;
