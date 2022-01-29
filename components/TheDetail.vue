@@ -18,7 +18,7 @@
           is pledged to the Philippine Eagle Foundation.
         </p>
         <div
-          class="sell-btn flex items-center mx-auto cursor-pointer justify-center text-white"
+          class="sell-btn transition-all flex items-center mx-auto cursor-pointer justify-center text-white"
         >
           Place A Bid
         </div>
