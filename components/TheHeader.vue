@@ -21,9 +21,21 @@
 
       <div class="self-end mr-9 lg:block hidden">
         <div class="buttons flex justify-between">
-          <div class="h-full cart cursor-pointer"></div>
+          <div class="h-full transition-all cart cursor-pointer">
+            <img
+              class="transition-all"
+              src="../assets/images/cart.svg"
+              alt=""
+            />
+          </div>
           <div class="divider"></div>
-          <div class="profile cursor-pointer h-full w-6"></div>
+          <div class="profile transition-all cursor-pointer h-full">
+            <img
+              class="transition-all"
+              src="../assets/images/person.svg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <!-- mobile -->
