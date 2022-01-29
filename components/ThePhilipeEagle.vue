@@ -52,13 +52,7 @@
         placeholder="To view your products you need a website address. Enter the address"
         class="sm:w-7/12 w-11/12"
       >
-        Website Link </BaseInput
-      ><BaseInput
-        placeholder="This description will be displayed when your currency password is released"
-        class="sm:w-7/12 w-11/12"
-        :textArea="true"
-      >
-        Description
+        Website Link
       </BaseInput>
       <BaseInput
         placeholder="Email Your way of communicating with us, enter your email"
@@ -66,49 +60,55 @@
       >
         EmailAddress
       </BaseInput>
-
-      <div
-        class="flex w-full relative adder items-center justify-evenly mt-14 flex-wrap"
+      <BaseInput
+        placeholder="This description will be displayed when your currency password is released"
+        class="sm:w-7/12 w-11/12"
+        :textArea="true"
       >
-        <img
-          class="sm:mr-2 mx-auto cursor-pointer absolute bottom-0 left-0"
-          src="../assets/images/add.svg"
-          alt=""
-          @click="adders.push('1')"
-        />
+        Description
+      </BaseInput>
+
+      <div class="flex flex-col mb-16" v-for="item in adders">
         <div
-          v-for="item in adders"
-          class="flex sm:w-11/12 mt-5 mx-auto w-full flex-wrap-reverse"
+          class="flex w-full relative adder items-center justify-evenly mt-14 flex-wrap"
         >
-          <BaseInput
-            placeholder="Email Your way of communicating with us, enter your email"
-            class="md:flex-1 sm:mx-auto manufactor w-11/12 sm:mr-6"
-          >
-            Manufacturer Group
+          <div class="flex sm:w-11/12 mt-5 mx-auto w-full flex-wrap-reverse">
+            <img
+              class="sm:mr-2 mx-auto cursor-pointer absolute bottom-0 left-0"
+              src="../assets/images/add.svg"
+              alt=""
+              @click="adders.push('1')"
+            />
+            <BaseInput
+              placeholder="Email Your way of communicating with us, enter your email"
+              class="md:flex-1 sm:mx-auto manufactor w-11/12 sm:mr-6"
+            >
+              Manufacturer Group
+            </BaseInput>
+            <BaseInput
+              class="mt-4 sm:mt-0 mr-10 sm:w-3/12 w-11/12"
+              :minimal="true"
+            >
+              Responsibility
+            </BaseInput>
+          </div>
+        </div>
+        <div
+          class="flex soc-media w-full sm:pr-20 mx-auto flex-wrap justify-between mt-20"
+        >
+          <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
+            <img class="absolute" src="../assets/images/linkedin.svg" alt="" />
           </BaseInput>
-          <BaseInput
-            class="mt-4 sm:mt-0 mr-10 sm:w-3/12 w-11/12"
-            :minimal="true"
-          >
-            Responsibility
+          <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
+            <img class="absolute" src="../assets/images/whatsapp.svg" alt="" />
+          </BaseInput>
+          <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
+            <img class="absolute" src="../assets/images/twitter.svg" alt="" />
+          </BaseInput>
+          <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
+            <img class="absolute" src="../assets/images/instagram.svg" alt="" />
           </BaseInput>
         </div>
-      </div>
-      <div
-        class="flex soc-media w-11/12 mx-auto flex-wrap justify-between mt-20"
-      >
-        <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
-          <img class="absolute" src="../assets/images/linkedin.svg" alt="" />
-        </BaseInput>
-        <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
-          <img class="absolute" src="../assets/images/whatsapp.svg" alt="" />
-        </BaseInput>
-        <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
-          <img class="absolute" src="../assets/images/twitter.svg" alt="" />
-        </BaseInput>
-        <BaseInput class="my-5 md:my-0 w-full sm:w-2/12" :minimal="true">
-          <img class="absolute" src="../assets/images/instagram.svg" alt="" />
-        </BaseInput>
       </div>
       <BaseInput
         placeholder="Enter a direct link for admin access to review the product"
@@ -208,12 +208,12 @@ export default {
   .further-information {
     > .base-input-container:nth-child(2),
     > .base-input-container:nth-child(3),
-    > .base-input-container:nth-child(5) {
+    > .base-input-container:nth-child(4) {
       // width: 766px;
       margin-top: 73px;
     }
 
-    > .base-input-container:nth-child(4) {
+    > .base-input-container:nth-child(5) {
       // width: 766px;
       margin-top: 73px;
       height: 196px;
