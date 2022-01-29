@@ -1,12 +1,12 @@
 <template>
-  <div class="related bg-white">
-    <div>
+  <div class="related pt-10 bg-white">
+    <div class="ml-8">
       <BaseHeader>Related Products</BaseHeader>
     </div>
     <div style="margin-top: 60px" class="flex justify-between items-center">
       <div
         id="button-prev-relacionados"
-        class="prev cursor-pointer flex items-center justify-center"
+        class="prev mx-auto cursor-pointer flex items-center justify-center"
       >
         <img src="../assets/images/prev.svg" alt="" />
       </div>
@@ -80,7 +80,7 @@
       </div>
       <div
         id="button-next-relacionados"
-        class="next cursor-pointer flex items-center justify-center"
+        class="next mx-auto cursor-pointer flex items-center justify-center"
       >
         <img src="../assets/images/next.svg" alt="" />
       </div>

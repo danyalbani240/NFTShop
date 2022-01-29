@@ -1,16 +1,18 @@
 <template>
   <div class="related bg-white">
-    <div>
+    <div class="ml-8">
       <BaseHeader>Related Products</BaseHeader>
     </div>
     <div style="margin-top: 60px" class="flex justify-between items-center">
       <div
         id="button-prev-rela"
-        class="prev cursor-pointer flex items-center justify-center"
+        class="prev mx-auto cursor-pointer flex items-center justify-center"
       >
         <img src="../assets/images/prev.svg" alt="" />
       </div>
-      <div class="popular-items-container overflow-x-hidden flex flex-wrap justify-between">
+      <div
+        class="popular-items-container overflow-x-hidden flex flex-wrap justify-between"
+      >
         <div v-swiper:mySwiper="options">
           <div class="swiper-wrapper flex justify-between">
             <BaseCard
@@ -78,7 +80,7 @@
       </div>
       <div
         id="button-next-rela"
-        class="next cursor-pointer flex items-center justify-center"
+        class="next mx-auto cursor-pointer flex items-center justify-center"
       >
         <img src="../assets/images/next.svg" alt="" />
       </div>

@@ -1,8 +1,9 @@
-.related{
-    margin-top: 58px;
-    padding:0 19px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-    >:first-child{
-        margin-top: 37px;
-    }
+.related {
+  margin-top: 58px;
+
+  padding: 37px 19px 61px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  > :first-child {
+    margin-top: 37px;
+  }
 }
